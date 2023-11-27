@@ -1,0 +1,608 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;  
+}
+
+body{
+    background-color: #FDFBF5 ;
+    height: 100vh;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h4{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 2%;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1c4b33;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-skill button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color:#000;
+    background-color:rgba(185, 185, 185, 0.341);
+    border: 0;
+    border-radius: 30px;
+
+}
+
+
+h2.titulo{
+    color: #1c4b33;
+    font-size:36px;
+    text-align: center;
+    font-weight: 900;
+}
+
+h2.titulo span{
+    color: #FF882D;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #1c4b33;
+    transform: scale(1.05);
+    transition: .2s;
+    
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;   
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #c3c3c3;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #000;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #1c4b33;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.btn-skill button:hover{
+    box-shadow: none;
+    transform: none;
+    transition: none;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+section .topo-do-site{
+    padding: 40px 4%;
+    margin-top: 30%;
+}
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #1C4B33;
+    font-size: 96px;
+    font-weight: 900;
+}
+
+/*PONTO DO TEXTO*/
+
+.topo-do-site {
+    padding: 3%
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #FF882D;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 10px 10px 4%;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;        
+    }    
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+    margin-top: 10%;
+    
+}
+
+section.especialidades .flex{
+    gap: 40px;
+    align-content: 100px;
+}
+
+.especialidades h4{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 2%;
+}
+
+.especialidades .especialidades-box{
+    color: #000;
+    padding: 30px;
+    border: 2px ;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    font-weight: 500;
+    text-align:start;
+    width: 1200px
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #8080804e;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 50px;
+    color: #1c4b33;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 8px 0;
+}
+.especialidades .especialidades-box h3 span{
+    color: #FF882D;
+}
+
+.especialidades .especialidades-box p{
+    font-size: 22px;
+}
+
+/* ESTILO DO SOBRE*/
+section.sobre{
+    padding: 40px 4%;
+    color: black;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #1c4b33;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #FF882D;
+}
+
+.sobre .txt-sobre h3{
+    font-size: 36px;
+    color: #1c4b33;
+    margin-bottom: 2%;
+    font-weight: 800;
+}
+
+.sobre .txt-sobre h3 span{
+    color: #FF882D;
+}
+
+.sobre .txt-sobre p{
+    font-size: 24px;
+    margin:20px 0 ;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1c4b33;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DAS FORMAÇÕES EXPERIENCIAS-1*/
+
+section.experiencias{
+    padding: 40px 4%; 
+    margin-top: 10%;   
+}
+section.experiencias .flex {
+    align-items: center;
+    justify-content:space-around;
+    gap: 90px;
+}
+
+.experiencias h4{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 2%;
+}
+
+.experiencias .txt-experiencias{
+    color: #000;
+    padding: 40px;
+    border: 2px ;
+    font-weight: 500;
+    width: 1530px;
+}
+
+.experiencias .txt-experiencias h3{
+    font-size: 28px;
+    margin: 8px 0;
+}
+.experiencias .txt-experiencias h3 span{
+    color: #1c4b33;
+}
+
+.experiencias  .txt-experiencias p{
+    font-size: 22px;
+}
+
+
+.experiencias .elipse img{
+    position: relative;
+    padding: 30px;
+    align-items: center;
+}
+
+/* ESTILO DAS EXPERIENCIAS-2*/
+section.experiencias-2{
+    padding: 40px 4%;
+    margin-top: -9%;
+}
+section.experiencias-2 .flex {
+    justify-content:space-around;
+    gap: 90px;
+}
+
+.experiencias-2 .txt-experiencias{
+    color: #000;
+    padding: 40px;
+    border: 2px ;
+    margin-top: 45px;
+    font-weight: 500;
+    width: 1530px;
+}
+
+.experiencias-2 .txt-experiencias h3{
+    font-size: 28px;
+    margin: 8px 0;
+}
+.experiencias-2 .txt-experiencias h3 span{
+    color: #1c4b33;
+}
+
+.experiencias-2  .txt-experiencias p{
+    font-size: 22px;
+}
+
+
+.experiencias-2 .elipse img{
+    position: relative;
+    padding: 30px;
+    margin-top: 45px;
+    align-items: center;
+}
+
+/* ESTILO DAS EXPERIENCIAS-3*/
+.projetos h4{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 2%;
+}
+
+section.experiencias-3{
+    padding: 40px 4%;
+    margin-top: -9%;
+}
+section.experiencias-3 .flex {
+    justify-content:space-around;
+    gap: 90px;
+}
+
+.experiencias-3 .txt-experiencias{
+    color: #000;
+    padding: 40px;
+    border: 2px ;
+    margin-top: 45px;
+    font-weight: 500;
+    width: 1530px;
+}
+
+.experiencias-3 .txt-experiencias h3{
+    font-size: 28px;
+    margin: 8px 0;
+}
+.experiencias-3 .txt-experiencias h3 span{
+    color: #1c4b33;
+}
+
+.experiencias-3  .txt-experiencias p{
+    font-size: 22px;
+}
+
+
+.experiencias-3 .elipse img{
+    position: relative;
+    padding: 30px;
+    margin-top: 45px;
+    align-items: center;
+}
+
+/* ESTILO DOS PROJETOS */
+section.projetos{
+    padding: 80px 4%;
+    margin-top: 10%;  
+}
+
+section.projetos .flex {
+    align-items: center;
+    justify-content:center;
+    gap: 70px;
+    margin-top: -2%;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin-top: -20%;
+    border: 2px ;
+    border-radius: 20px;
+    cursor:default;
+    position: relative;
+    
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    transition: 10s;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(2, 5, 4, 0.64);
+    color: #FDFBF5;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+span{
+    color: #FF882D;
+}
+
+/* ESTILO BOX-PORT*/
+.txt-port {
+    width: 250px;
+}
+
+.txt-port h1{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px 4%;
+    text-align: start;
+}
+
+.txt-port .btn-contato {
+    margin-top: 10%;
+}
+/*ESTILO DOS BOTÕES-01*/
+
+section.btn-info{
+    padding: -3%
+}
+
+section.btn-info .flex{
+    gap: 1%;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+/*ESTILO DOS BOTÕES-02*/
+
+section.btn-info-2{
+    padding: 1%
+}
+
+section.btn-info-2 .flex{
+    gap: 1%;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+/*ESTILO DO FORMULÁRIO DE CONTATO*/
+
+section.formulario {
+    padding: 40px 4%;
+    margin-top: 10%;
+    margin-bottom: -80px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgba(185, 185, 185, 0.341);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1c4b33;
+    border-radius: 40px;
+}
+
+form .btn-enviar input {
+    width: 150px;
+    background-color:#1C4B33;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 40px;
+}
+
+/*ESTILO DO FOOTER*/
+
+footer{
+    background-color:#1c4b33; 
+    padding: 60px 4%;
+    margin-top: 10%;
+}
+
+footer .flex{
+    gap: 90px;
+    margin-top: -2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.line-footer{
+    padding: 40px 0;
+    height: 50px;
+}
+
+ .btn-social button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1c4b33;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    align-items:flex-end;
+    justify-content:flex-end;
+
+ }
+
+ footer .line-footer p i{
+    color:#ffffff;
+    font-size: 20px;
+ }
+
+ footer .line-footer p a{
+    color: #ffffff;
+}
+
+section.email{
+    font-size: 22px;
+}
