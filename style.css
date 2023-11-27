@@ -28,6 +28,19 @@ h4{
     display: flex;
 }
 
+.btn-contato1{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1c4b33;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    align-content: center;
+    align-items: center;
+}
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
@@ -415,6 +428,18 @@ section.projetos .flex {
     margin-top: -2%;
 }
 
+.btn-contato1 button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1c4b33;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 .img-port{
     width: 360px;
     height: 460px;
@@ -605,4 +630,84 @@ footer.line-footer{
 
 section.email{
     font-size: 22px;
+}
+
+
+@media screen and (max-width: 1020px){
+    /*CLASSES GERAIS*/
+.flex{
+    flex-direction: column;
+}
+
+.topo-do-site .flex{
+    flex-direction: column-reverse;
+}
+
+/*CABEÇALHO*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+/*EXPERIÊNCIAS*/
+
+.elipse{
+    display: none;
+}
+
+.experiencias.txt-experiencias.flex{
+    margin: -5px;
+}
+
+.experiencias .txt-experiencias{
+    width: 300px;
+    margin-left: -2000px;
+}
+
+.experiencias-2 .txt-experiencias{
+    width: 300px;
+    margin-left: -10px;
+    margin-bottom: 5px;
+
+}
+
+.experiencias-3 .txt-experiencias{
+    width: 300px;
+    margin-left: -20px;
+}
+
+/*PROJETOS*/
+
+section.projetos{
+    margin-top: -50px;
+}
+.projetos .flex .img-port{
+    margin-bottom: 80px;
+}
+
+.projetos .flex .txt-port{
+    margin-top: -100px;
+}
+
+.projetos.titulo{
+    margin-bottom: 30px;
+}
+/*BOTÕES*/
+.btn-info, .btn-info-2{
+    display: none;
+    justify-content: center;
+}
+
+/*RODAPÉ*/
+section .projetos.btn-contato{
+    display: inline-flex;
+}
+
+.line-footer{
+    margin-top: 2px;
+}
+
+.btn-enviar{
+    margin-bottom: 40px;
+}
+
 }
