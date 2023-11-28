@@ -526,6 +526,85 @@ section.btn-info-2 .flex{
     
 }
 
+/*ESTILO DO SLIDER*/
+
+section.testemunhos{
+    padding: 80px 4%;
+    margin-top: 10%; 
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #FF882D;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color:#FF882D;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color:#FF882D;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+
 /*ESTILO DO FORMULÁRIO DE CONTATO*/
 
 section.formulario {
@@ -630,84 +709,4 @@ footer.line-footer{
 
 section.email{
     font-size: 22px;
-}
-
-
-@media screen and (max-width: 1020px){
-    /*CLASSES GERAIS*/
-.flex{
-    flex-direction: column;
-}
-
-.topo-do-site .flex{
-    flex-direction: column-reverse;
-}
-
-/*CABEÇALHO*/
-    .menu-desktop, .btn-contato{
-        display: none;
-    }
-
-/*EXPERIÊNCIAS*/
-
-.elipse{
-    display: none;
-}
-
-.experiencias.txt-experiencias.flex{
-    margin: -5px;
-}
-
-.experiencias .txt-experiencias{
-    width: 300px;
-    margin-left: -2000px;
-}
-
-.experiencias-2 .txt-experiencias{
-    width: 300px;
-    margin-left: -10px;
-    margin-bottom: 5px;
-
-}
-
-.experiencias-3 .txt-experiencias{
-    width: 300px;
-    margin-left: -20px;
-}
-
-/*PROJETOS*/
-
-section.projetos{
-    margin-top: -50px;
-}
-.projetos .flex .img-port{
-    margin-bottom: 80px;
-}
-
-.projetos .flex .txt-port{
-    margin-top: -100px;
-}
-
-.projetos.titulo{
-    margin-bottom: 30px;
-}
-/*BOTÕES*/
-.btn-info, .btn-info-2{
-    display: none;
-    justify-content: center;
-}
-
-/*RODAPÉ*/
-section .projetos.btn-contato{
-    display: inline-flex;
-}
-
-.line-footer{
-    margin-top: 2px;
-}
-
-.btn-enviar{
-    margin-bottom: 40px;
-}
-
 }

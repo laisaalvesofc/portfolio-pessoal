@@ -14,6 +14,7 @@
     <!--FIM LINK BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="style.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
@@ -34,15 +35,16 @@
             <nav class="menu-desktop">
                 <ul>
                     <li> <a href="#">Início</a></li>
-                    <li> <a href="#">Especialidades</a></li>
-                    <li> <a href="#">Sobre</a></li>
-                    <li> <a href="#">Projetos</a></li>
+                    <li> <a href="#especialideades">Especialidades</a></li>
+                    <li> <a href="#sobre">Sobre</a></li>
+                    <li> <a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#"></a>
+                <a href="#formulario">
                     <button>Contato</button>
+                </a>
             </div><!--contato-->
         </div> <!--interface-->
     </header>
@@ -59,8 +61,8 @@
                         </p>
                         
                         <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
+                            <a href="#sobre">
+                                <button>Saiba mais</button>
                             </a> 
                             
                         </div>
@@ -74,7 +76,7 @@
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialideades">
             <div class="interface">
                 <h2 class="titulo">design e desenvolvimento<span>.</span></h2>
                 <h4>Sou capaz de contribuir em diferentes projetos com diversas habilidades.</h4>
@@ -106,7 +108,7 @@
          </div><!--interface-->    
         </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     
@@ -205,7 +207,7 @@
         </div><!--interface-->      
             </section><!--experiencias-3--> 
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <div class="interface">
                 <h2 class="titulo">projetos<span>.</span></h2>
                     <h4>Aqui estão alguns projetos de design em que trabalhei anteriomente.</h4>
@@ -229,7 +231,7 @@
                     <div class="txt-port">
                         <h1>dê uma olhada em<span></span> todos os meus projetos</span></h1>
 
-                        <div class="btn-contato1">
+                        <div class="btn-contato">
                             <a href="https://laisaalves.myportfolio.com">
                                 <button>aqui</button>
                             </a> 
@@ -300,7 +302,60 @@
             </div><!--interface-->
             </section><!--btn-info-->
 
-        <section class="formulario">
+            
+            <section class="testemunhos">
+                <div class="interface">
+                    <h2 class="titulo">recomendações<span>.</span></h2>
+                        <h4>Estive em projetos com diversas equipes e aqui estão alguns comentários sobre minhas contribuições.</h4>
+
+                </div><!--interface-->  
+            </section>
+
+
+            <section class="slider">
+                <div class="slider-content">
+                    
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+        
+                    <div class="slide-box primeiro">
+                        <img class="img-desktop" src="images/img-1.png" alt="slide 1">
+                    </div>
+        
+                    <div class="slide-box">
+                        <img class="img-desktop" src="images/img-2.png" alt="slide 2">
+                    </div>
+        
+                    <div class="slide-box">
+                        <img class="img-desktop" src="images/img-3.png" alt="slide 3">
+                    </div>
+        
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+        
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+        
+                </div>
+            </section><!--slider-->
+
+                
+
+
+
+
+
+
+
+
+        <section class="formulario" id="formulario">
                 <div class="interface">
                     <h2 class="titulo">fale comigo<span>.</span></h2>
                     <h4>Tem uma pergunta, proposta ou apenas quer dizer olá? Vá em frente!</h4>
